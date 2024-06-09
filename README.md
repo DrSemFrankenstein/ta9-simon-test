@@ -1,6 +1,6 @@
 # TA9 Simon Test
 
-![Your Image Description](src\assets\img\Screenshot.jpg)
+![Your Image Description](src/assets/img/Screenshot.jpg)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2.
 
