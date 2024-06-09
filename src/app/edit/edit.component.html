@@ -1,0 +1,41 @@
+<div class="form-container">
+  <h2>Edit</h2>
+  <form [formGroup]="tagForm" (ngSubmit)="onSubmit()">
+    <div class="form-group row">
+      <div class="column-80">
+        <label for="name">Name</label>
+        <div class="input-group">
+          <input
+            id="name"
+            type="text"
+            placeholder="Type tag name..."
+            formControlName="name"
+          />
+        </div>
+      </div>
+      <div class="column-20">
+        <label for="color">Color</label>
+        <div class="input-group">
+          <input id="color" type="color" formControlName="color" />
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="form-group">
+      <label for="description">Tag Description</label>
+      <textarea
+        id="description"
+        placeholder="Type tag description..."
+        formControlName="description"
+      ></textarea>
+    </div>
+    <div class="button-wrapper">
+      <button type="button" class="cancel-button" (click)="closeDrawer()">
+        Cancel
+      </button>
+      <button type="submit" class="submit-button" [disabled]="tagForm.invalid">
+        Edit
+      </button>
+    </div>
+  </form>
+</div>

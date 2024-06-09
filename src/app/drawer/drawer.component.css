@@ -1,0 +1,41 @@
+.drawer-container {
+  position: fixed;
+  top: 0;
+  right: -767px;
+  height: 100%;
+  width: 767px;
+  background-color: #f8f8f8;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.drawer-content {
+  padding: 20px;
+  height: inherit;
+}
+
+.open {
+  right: 0;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  background-image: url("../../assets/img/x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+}

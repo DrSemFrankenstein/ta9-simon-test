@@ -1,0 +1,8 @@
+<div class="drawer-container" [ngClass]="{ open: isOpen }">
+  <div class="drawer-header">
+    <button class="close-btn" (click)="onToggleDrawer()"></button>
+  </div>
+  <div class="drawer-content">
+    <ng-content></ng-content>
+  </div>
+</div>

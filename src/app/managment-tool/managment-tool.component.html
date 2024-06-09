@@ -1,0 +1,20 @@
+<div class="container">
+  <p class="title">Management Tool</p>
+  <button 
+    class="tilesMode" 
+    [ngClass]="{ 'shadow-effect': !isListMode }" 
+    (click)="isList(false)">
+  </button>
+  <button 
+    class="listMode" 
+    [ngClass]="{ 'shadow-effect': isListMode }" 
+    (click)="isList(true)">
+  </button>
+  <button 
+    class="createNew" 
+    (click)="toggleDrawer()">
+  </button>
+</div>
+<app-drawer [isOpen]="isDrawerOpen" (toggleDrawer)="toggleDrawer()">
+  <app-create-new (DrawerModeChanged)="toggleDrawer()"></app-create-new>
+</app-drawer>

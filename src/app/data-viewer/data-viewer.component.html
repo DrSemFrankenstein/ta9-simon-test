@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="sortTitle" *ngIf="isListMode">
+    <div class="color">Color</div>
+    <div class="name" (click)="toggleSortOrder()">Name</div>
+    <div class="createDate">Create Date</div>
+    <div class="lastUpdate">Last Update</div>
+    <div class="createdBy">Created By</div>
+  </div>
+  <div class="items">
+    <div class="card-container" *ngIf="isListMode">
+      <ng-container *ngFor="let item of paginatedItems; let i = index">
+        <div
+          class="itemLine"
+          [ngClass]="{ selected: selectedItemIndex === i }"
+          (click)="selectItem(item)"
+        >
+          <div class="itemColor" [style.background]="item.color"></div>
+          <div class="itemName">{{ item.name }}</div>
+          <div class="itemCreateDate">{{ item.createDate }}</div>
+          <div class="itemLastUpdate">{{ item.lastUpdate }}</div>
+          <div class="itemCreatedBy">{{ item.createdBy }}</div>
+        </div>
+      </ng-container>
+    </div>
+    <div class="card-container" *ngIf="!isListMode">
+      <ng-container *ngFor="let item of paginatedItems; let i = index">
+        <div class="card">
+          <div class="card-content">
+            <div class="square" [style.background]="item.color"></div>
+          </div>
+          <div class="card-footer">
+            <div class="label">{{ item.name }}</div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <div class="pagination">
+    <button (click)="previousPage()" [disabled]="currentPage === 1">
+      Previous
+    </button>
+    <span>{{ currentPage }} / {{ totalPages }}</span>
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">
+      Next
+    </button>
+  </div>
+  <app-drawer [isOpen]="isDrawerOpen" (toggleDrawer)="toggleDrawer()">
+    <app-edit
+      [selectedItem]="selectedItem"
+      (drawerModeChanged)="onDrawerModeChanged($event)"
+    ></app-edit>
+  </app-drawer>
+</div>

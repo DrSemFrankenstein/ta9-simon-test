@@ -1,0 +1,57 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  position: absolute;
+  top: 102px;
+  left: 71px;
+  width: 165px;
+  height: 24px;
+  opacity: 1;
+  font-size: 20px;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #0e4f6e;
+}
+
+.tilesMode,
+.listMode,
+.createNew {
+  position: absolute;
+  top: 103px;
+  width: 24px;
+  height: 22px;
+  border: none;
+  background-position: center;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.tilesMode {
+  left: 1712px;
+  background: transparent url("../../assets/img/Tiles Mode.png") 0% 0% no-repeat
+    padding-box;
+}
+
+.listMode {
+  left: 1760px;
+  background: transparent url("../../assets/img/List Mode.png") 0% 0% no-repeat
+    padding-box;
+}
+
+.createNew {
+  left: 1800px;
+  width: 42px;
+  height: 42px;
+  top: 96px;
+  background: transparent url("../../assets/img/Create New.png") 0% 0% no-repeat
+    padding-box;
+  background-size: contain;
+}
+
+.shadow-effect {
+  box-shadow: 0px 4px 8px #749AAC;
+  transition: box-shadow 0.3s ease-in-out;
+}

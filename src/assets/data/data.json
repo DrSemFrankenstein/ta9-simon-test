@@ -1,0 +1,72 @@
+[
+  {
+      "color": "#FF5733",
+      "name": "Car accident",
+      "createDate": "2023-06-01",
+      "lastUpdate": "2023-06-05",
+      "createdBy": "User A"
+  },
+  {
+      "color": "#33FF57",
+      "name": "Bicycle accident",
+      "createDate": "2023-06-02",
+      "lastUpdate": "2023-06-06",
+      "createdBy": "User B"
+  },
+  {
+      "color": "#3357FF",
+      "name": "Pedestrian accident",
+      "createDate": "2023-06-03",
+      "lastUpdate": "2023-06-07",
+      "createdBy": "User C"
+  },
+  {
+      "color": "#FF33A8",
+      "name": "Motorcycle accident",
+      "createDate": "2023-06-04",
+      "lastUpdate": "2023-06-08",
+      "createdBy": "User D"
+  },
+  {
+      "color": "#A833FF",
+      "name": "Truck accident",
+      "createDate": "2023-06-05",
+      "lastUpdate": "2023-06-09",
+      "createdBy": "User E"
+  },
+  {
+      "color": "#33FFA8",
+      "name": "Boat accident",
+      "createDate": "2023-06-06",
+      "lastUpdate": "2023-06-10",
+      "createdBy": "User F"
+  },
+  {
+      "color": "#FF8C33",
+      "name": "Train accident",
+      "createDate": "2023-06-07",
+      "lastUpdate": "2023-06-11",
+      "createdBy": "User G"
+  },
+  {
+      "color": "#338CFF",
+      "name": "Plane accident",
+      "createDate": "2023-06-08",
+      "lastUpdate": "2023-06-12",
+      "createdBy": "User H"
+  },
+  {
+      "color": "#8C33FF",
+      "name": "Industrial accident",
+      "createDate": "2023-06-09",
+      "lastUpdate": "2023-06-13",
+      "createdBy": "User I"
+  },
+  {
+      "color": "#FF3333",
+      "name": "Workplace accident",
+      "createDate": "2023-06-10",
+      "lastUpdate": "2023-06-14",
+      "createdBy": "User J"
+  }
+]

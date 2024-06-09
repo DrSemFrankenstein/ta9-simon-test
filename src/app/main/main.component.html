@@ -1,0 +1,11 @@
+<main>
+  <app-url-field />
+  <app-managment-tool
+    (listModeChanged)="toggleListMode($event)"
+  ></app-managment-tool>
+  <app-search (searchQuery)="handleSearch($event)"></app-search>
+  <app-data-viewer
+    [isListMode]="isListMode"
+    [searchQuery]="searchQuery"
+  ></app-data-viewer>
+</main>
